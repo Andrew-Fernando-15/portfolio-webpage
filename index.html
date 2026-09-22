@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Fernando | Portfolio</title>
+    <meta name="description" content="Personal Portfolio of Andrew Fernando, a Computer Engineering Undergraduate.">
+
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- ── Floating Navbar ── -->
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-pill">
+            <span class="nav-indicator" id="navIndicator"></span>
+            <a href="#home" class="nav-link active" data-section="home">
+                <i class="fa-solid fa-house nav-icon"></i>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <i class="fa-solid fa-user nav-icon"></i>
+                <span class="nav-label">About</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <i class="fa-solid fa-code nav-icon"></i>
+                <span class="nav-label">Projects</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <i class="fa-solid fa-layer-group nav-icon"></i>
+                <span class="nav-label">Skills</span>
+            </a>
+            <a href="#certifications" class="nav-link" data-section="certifications">
+                <i class="fa-solid fa-award nav-icon"></i>
+                <span class="nav-label">Certificate</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <i class="fa-solid fa-envelope nav-icon"></i>
+                <span class="nav-label">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ── Preloader: Boot Sequence ── -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-particles" id="preloaderParticles"></div>
+        <div class="preloader-brand">
+            <div id="top-row">
+                <img id="logo" src="Assets/logo.png" alt="AF Logo">
+                <div id="text-block">
+                    <div id="name">ANDREW FERNANDO</div>
+                    <div class="preloader-brand-subtitle">
+                        <span class="subtitle-line"></span>
+                        <span>PERSONAL PORTFOLIO</span>
+                        <span class="subtitle-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preloader-sleek-track">
+            <div class="preloader-sleek-fill" id="preloaderSleekFill"></div>
+        </div>
+        <div class="preloader-tagline">
+            <span class="tagline-word" style="--w:0">IDEATE.</span>
+            <span class="tagline-word" style="--w:1">DESIGN.</span>
+            <span class="tagline-word" style="--w:2">DEVELOP.</span>
+            <span class="tagline-word" style="--w:3">INNOVATE.</span>
+        </div>
+    </div>
+
+    <div class="background-container">
+        <canvas id="bg-canvas"></canvas>
+    </div>
+
+    <!-- Home Section -->
+    <main class="hero" id="home">
+        <div class="floating-icon icon-top-left"><i class="fa-solid fa-code"></i></div>
+        <div class="floating-icon icon-top-right"><i class="fa-solid fa-brain"></i></div>
+        <div class="floating-icon icon-bottom-left"><i class="fa-solid fa-trophy"></i></div>
+        <div class="floating-icon icon-bottom-right"><i class="fa-regular fa-lightbulb"></i></div>
+
+        <div class="content-wrapper">
+            <h2 class="sub-title">Woah! You Landed on the Portfolio Website of The</h2>
+            <br><br>
+            <h2 class="main-title">
+                <span class="purple-text" id="typing-text"></span>
+            </h2>
+            <br><br>
+            <h5 class="year hero-name">Andrew Fernando | CE Undergrad Student</h5>
+            <br>
+            <p
+                style="text-align: center; color: rgba(255, 255, 255, 0.7); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+                Building creative interfaces and practical tools with pure web technologies.</p>
+            <br>
+            <div class="hero-buttons">
+                <a href="https://linkedin.com/in/andrew-fernando-b6362a346" target="_blank" class="btn-resume">View
+                    LinkedIn</a>
+                <a href="#projects" class="btn-resume outline">View Project</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="glass-card scroll-reveal about-card-layout">
+            <div class="about-text-content">
+                <h2>About Me - <span class="purple-text">Behind The Code!</span></h2>
+                <ul class="about-bullets">
+                    <li><strong>Engineering Focus:</strong> Problem-solving and disciplined execution as a CE undergrad.
+                    </li>
+                    <li><strong>High Performance:</strong> Building interactive web systems with clean, intuitive UIs.
+                    </li>
+                    <li><strong>Real-World Impact:</strong> Developing scalable solutions and accessible community
+                        tools.</li>
+                </ul>
+            </div>
+            <div class="about-image-content">
+                <img src="Assets/Aboutme.png" alt="Andrew" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Projects Showcase - <span class="purple-text">What I've Built!</span></h2>
+        <br>
+        <div class="experience-slider">
+            <div class="experience-card scroll-reveal">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Web OS</div>
+                <h3>Mr.Fernando OS</h3>
+                <p>An extended, interactive version of my portfolio where you can explore my projects. It's a fun and
+                    unique project designed to look and function like a real desktop operating system, which I named
+                    Fernando OS.</p>
+                <div class="project-links-wrapper">
+                    <a href="https://Andrew-Fernando-15.github.io/Portfolio/" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-solid fa-link"></i> Live Demo</a>
+                </div>
+            </div>
+
+            <div class="experience-card scroll-reveal">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Web App</div>
+                <h3>Student Management System</h3>
+                <p>A clean web application for managing student records.</p>
+                <div class="project-links-wrapper">
+                    <a href="#" class="project-btn primary-btn inactive-btn"><i class="fa-brands fa-github"></i> Source
+                        Code</a>
+                </div>
+            </div>
+
+            <div class="experience-card scroll-reveal">
+                <div class="project-tag" style="display: inline-block; width: max-content;">Blockchain Project</div>
+                <h3>ChainGuard</h3>
+                <p>A secure digital evidence management system combining Blockchain, SHA-256 hashing, role-based access,
+                    and AI anomaly detection for a tamper-proof chain of custody.</p>
+                <div class="project-links-wrapper">
+                    <a href="https://github.com/Andrew-Fernando-15/Chainguard" target="_blank"
+                        class="project-btn primary-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Technical Skills - <span class="purple-text">Core Expertise!</span></h2>
+
+        <div class="skills-container scroll-reveal" id="skillGrid">
+            <div class="skills-column">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 95%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 80%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>C</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 75%;"></span></div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Vanilla JS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Modern CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Git</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>GitHub</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-line"><span style="width: 70%;"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+        <h2 class="section-title">Certifications - <span class="purple-text">Learning Milestones!</span></h2>
+        <div class="cert-list scroll-reveal">
+            <div class="cert-timeline-line"></div>
+            <div class="cert-list-item">
+                <div class="cert-timeline-dot"></div>
+                <div class="cert-content-main">
+                    <h3 class="cert-title">Bachelor of Engineering - SIES</h3>
+                    <span class="cert-org">Computer Engineering</span>
+                </div>
+                <span class="cert-date">2024 - Current</span>
+            </div>
+            <div class="cert-list-item">
+                <div class="cert-timeline-dot"></div>
+                <div class="cert-content-main">
+                    <h3 class="cert-title">Bachelor of Science - IITM</h3>
+                    <span class="cert-org">Data Science and Applications [Foundation, Diploma in Programming]</span>
+                </div>
+                <span class="cert-date">2025 - Current</span>
+            </div>
+            <div class="cert-list-item">
+                <div class="cert-timeline-dot"></div>
+                <div class="cert-content-main">
+                    <h3 class="cert-title">AI Fluency: Framework & Foundations</h3>
+                    <span class="cert-org">Anthropic Course, Skilljar</span>
+                </div>
+                <span class="cert-date">2026</span>
+            </div>
+            <div class="cert-list-item">
+                <div class="cert-timeline-dot"></div>
+                <div class="cert-content-main">
+                    <h3 class="cert-title">AI Fluency for students</h3>
+                    <span class="cert-org">Anthropic Course, Skilljar</span>
+                </div>
+                <span class="cert-date">2026</span>
+            </div>
+            <div class="cert-list-item">
+                <div class="cert-timeline-dot"></div>
+                <div class="cert-content-main">
+                    <h3 class="cert-title">Claude Code 101</h3>
+                    <span class="cert-org">Anthropic Course, Skilljar</span>
+                </div>
+                <span class="cert-date">2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container scroll-reveal">
+            <h2 class="section-title">Get In Touch - <span class="purple-text">Ask Me Anything!</span></h2>
+            <h4 class="contact-note">Based in Mumbai, India.<br> I'm always open to discussing new ideas, projects, or
+                collaborations.</h4>
+            <div class="contact-card">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
+                        <label for="name">Name</label>
+                        <i class="fa-solid fa-user input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                        <label for="email">Email</label>
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                        <i class="fa-solid fa-comment input-icon"></i>
+                    </div>
+                    <button type="submit" class="btn-resume btn-submit">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo"><span class="purple-text">Andrew Fernando</span></h2>
+                <p class="footer-tagline">Innovation at the Intersection of Code and Design!</p>
+            </div>
+
+            <ul class="footer-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/andrew-fernando-b6362a346" target="_blank"
+                    class="social-link linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Andrew-Fernando-15" target="_blank" class="social-link github"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:andrewafdo@gmail.com" target="_blank" class="social-link email"><i
+                        class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Andrew Fernando. All rights reserved.</p>
+            <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <button id="flowthrough-btn" class="flowthrough-btn">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Flowthrough
+    </button>
+
+    <!-- Flowthrough Modal: Stage 2 -->
+    <div id="flowthrough-modal-overlay" class="flowthrough-overlay">
+        <div class="flowthrough-modal-box">
+            <h3 class="modal-title">Ready for a Guided Tour?</h3>
+            <p class="modal-message">Don’t do anything, just enjoy.<br>The assistant will guide you throughout the
+                Portfolio Page.</p>
+            <div class="modal-buttons">
+                <button id="ft-btn-ok" class="project-btn primary-btn"><i class="fa-solid fa-check"></i> OK</button>
+                <button id="ft-btn-no" class="project-btn cancel-btn"><i class="fa-solid fa-xmark"></i> NO, I will
+                    Explore it myself</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flowthrough Stage 3: Cassie Cursor and Tooltip -->
+    <div id="cassie-cursor" class="cassie-orb"></div>
+
+    <div id="cassie-tooltip" class="cassie-tooltip">
+        <div class="cassie-header">
+            <span>Cassie</span>
+        </div>
+        <p id="cassie-text"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
