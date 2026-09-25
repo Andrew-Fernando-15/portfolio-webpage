@@ -9,7 +9,7 @@ This is a modern, interactive portfolio website designed to showcase my coding p
 
 ## 🚀 Live Demo
 
-[View my live portfolio here!](https://phantomdeluxe-dev.github.io/portfolio-webpage)s
+[View my live portfolio here!](https://Andrew-Fernando-15.github.io/portfolio-webpage)
 
 ---
 
